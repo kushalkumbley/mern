@@ -1,0 +1,128 @@
+/*** Main about introduction ***/
+.aboutContainer {
+  background-color: #ededed;
+}
+
+.aboutContainer > .row1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 60vh;
+  padding: 1rem 1rem;
+  background-image: url("../../../assets/images/aboutbg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: none;
+}
+
+.aboutContainer > .row1 > h1 {
+  color: white;
+}
+
+.aboutContainer > .row1 > p {
+  text-align: center;
+  color: white;
+  font-size: 1.25rem;
+  margin-top: 1.25rem;
+}
+
+/*** Mission section ***/
+.aboutContainer > .row2 {
+  text-align: center;
+  width: 100%;
+  padding: 5rem 0;
+}
+
+.aboutContainer > .row2 > p {
+  font-size: 1.25rem;
+  margin-top: 1.25rem;
+}
+
+/*** Our Services section ***/
+.aboutContainer > .row3 {
+  /* display: flex; */
+  justify-content: space-between;
+  padding: 5rem;
+}
+
+.aboutContainer > .row3 > h1 {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.aboutContainer > .row3 > .services {
+  display: flex;
+  justify-content: space-between;
+}
+
+.aboutContainer > .row3 > .services > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.aboutContainer > .row3 > .services > div > i {
+  font-size: 3rem;
+}
+
+.aboutContainer > .row3 > .services > div > h1 {
+  margin-top: 1.5rem;
+}
+
+.aboutContainer > .row3 > .services > div > p {
+  font-size: 1.25rem;
+  margin-top: 1.25rem;
+}
+
+/******************** Media Query ********************/
+
+/* large tablet screen */
+@media (max-width: 992px) {
+  .aboutContainer > .row3 > .services {
+    display: flex;
+    flex-direction: column;
+  }
+  .aboutContainer > .row3 > .services > div {
+    padding: 3rem;
+  }
+}
+
+/* small tablet screen */
+@media (max-width: 768px) {
+  .aboutContainer > .row2 {
+    width: 100%;
+    padding: 3rem;
+  }
+
+  .aboutContainer > .row3 > .services {
+    flex-direction: column;
+    border: 1px solid #b2b2b2;
+    background-color: white;
+  }
+
+  .aboutContainer > .row3 > .services > div {
+    padding: 3rem;
+  }
+}
+
+/* large mobile screen */
+@media (max-width: 576px) {
+  .aboutContainer > .row3 > .services > div {
+    padding: 3rem;
+  }
+}
+
+/* small mobile screen */
+@media (max-width: 480px) {
+  .aboutContainer > .row1 {
+    background-attachment: fixed;
+  }
+  .aboutContainer > .row2 {
+  }
+}
+
+/* extra small mobile screen */
+@media (max-width: 360px) {
+}

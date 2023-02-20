@@ -1,0 +1,140 @@
+.contactContainer {
+  display: flex;
+  padding: 4rem 3rem;
+  border: 1px solid #b2beb5;
+  min-height: calc(100vh - 10rem);
+  align-items: center;
+}
+
+.contactContainer > .flex-item1 {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  padding-right: 5rem;
+  border-right: 1px solid #b2beb5;
+}
+
+.contactContainer > .flex-item1 > h1 {
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.contactContainer > .flex-item1 > p {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 1.25rem;
+}
+
+.contactContainer > .flex-item1 > form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contactContainer > .flex-item1 > form > input {
+  margin-bottom: 1.25rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid #b2beb5;
+}
+
+.contactContainer > .flex-item1 > form > textarea {
+  height: 15rem;
+  resize: vertical;
+  padding: 1rem;
+  margin-bottom: 1.25rem;
+  border-radius: 0.5rem;
+}
+
+.contactContainer > .flex-item1 > form > button {
+  height: 4rem;
+  width: 8rem;
+  margin-left: auto;
+  color: white;
+  background-color: #24252a;
+  cursor: pointer;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+/********************* flex 2 *********************/
+
+.contactContainer > .flex-item2 {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding-left: 5rem;
+}
+
+.contactContainer > .flex-item2 > div {
+  margin-bottom: 5rem;
+}
+
+.contactContainer > .flex-item2 > div > h1 {
+  margin-bottom: 0.5rem;
+}
+
+.contactContainer > .flex-item2 > div > p {
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.contactContainer > .flex-item2 > div > div {
+  display: flex;
+  align-items: center;
+}
+
+.contactContainer > .flex-item2 > div > div > i {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}
+
+.contactContainer > .flex-item2 > div > div > p {
+  font-size: 1.25rem;
+}
+
+/******************** Media Query ********************/
+
+/* small tablet screen */
+@media (max-width: 768px) {
+  .contactContainer > .flex-item1 {
+    padding-right: 3rem;
+  }
+  .contactContainer > .flex-item2 {
+    padding-left: 3rem;
+  }
+}
+
+/* large mobile screen */
+@media (max-width: 576px) {
+  .contactContainer {
+    flex-direction: column;
+  }
+  .contactContainer > .flex-item1 {
+    width: 100%;
+    padding-right: 0rem;
+    border-right: none;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #b2beb5;
+  }
+
+  .contactContainer > .flex-item2 {
+    width: 100%;
+    padding-top: 2rem;
+    padding-left: 0rem;
+  }
+
+  .contactContainer > .flex-item2 > div {
+    margin-bottom: 3rem;
+  }
+
+  .contactContainer > .flex-item2 > div:last-child {
+    margin-bottom: 0;
+  }
+}
+
+/* small mobile screen */
+@media (max-width: 480px) {
+  .contactContainer {
+    padding: 1rem 2rem;
+  }
+}
